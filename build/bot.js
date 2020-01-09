@@ -13,10 +13,6 @@ var DiscordTS = /** @class */ (function () {
     }
     DiscordTS.prototype.start = function () {
         var _this = this;
-        this.client.on("ready", function () {
-            console.log("I'm ready!");
-            _this.client.user.setActivity(_this.config.settings.activity);
-        });
         this.client.on("message", function (message) {
             if (message.content === _this.config.settings.prefix + "almanax") {
                 _this.getAlmanaxOfToday()
