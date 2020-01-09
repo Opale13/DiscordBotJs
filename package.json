@@ -1,0 +1,32 @@
+{
+  "name": "discordbotjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhiteShadow13/DiscordBotJs.git"
+  },
+  "author": "Ludovic Merel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WhiteShadow13/DiscordBotJs/issues"
+  },
+  "homepage": "https://github.com/WhiteShadow13/DiscordBotJs#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "nodemon": "^2.0.2",
+    "typescript": "^3.7.4"
+  }
+}
