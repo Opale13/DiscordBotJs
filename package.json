@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:gulp": "gulp build",
+    "build": "npm run build:gulp -s"
   },
   "repository": {
     "type": "git",
@@ -17,16 +18,16 @@
   },
   "homepage": "https://github.com/WhiteShadow13/DiscordBotJs#readme",
   "dependencies": {
+    "del": "^5.1.0",
     "discord.js": "^11.5.1",
+    "path": "^0.12.7",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-nodemon": "^2.4.2",
-    "gulp-sourcemaps": "^2.6.5",
+    "@types/node": "^13.1.6",
+    "@types/yamljs": "^0.2.30",
+    "gulp": "^4.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
-    "nodemon": "^2.0.2",
     "typescript": "^3.7.4"
   }
 }
