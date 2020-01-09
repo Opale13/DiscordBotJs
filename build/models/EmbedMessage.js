@@ -17,7 +17,7 @@ var EmbedMessage = /** @class */ (function () {
         return this.embedMessage;
     };
     EmbedMessage.prototype.defineTitle = function () {
-        this.embedMessage.setTitle("Local Almanax of " +
+        this.embedMessage.setTitle("Almanax of " +
             this.today.getDate() + "/" +
             (this.today.getMonth() + 1) + "/" +
             this.today.getFullYear());

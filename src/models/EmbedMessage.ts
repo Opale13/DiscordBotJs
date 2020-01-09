@@ -24,7 +24,7 @@ export class EmbedMessage {
     }
 
     private defineTitle(): void {
-        this.embedMessage.setTitle("Local Almanax of " + 
+        this.embedMessage.setTitle("Almanax of " + 
             this.today.getDate() + "/" +
             (this.today.getMonth()+1) + "/" +
             this.today.getFullYear());
