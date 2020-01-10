@@ -3,6 +3,7 @@ import Axios, { AxiosResponse } from "axios";
 import * as path from "path";
 import * as YAML from "yamljs";
 import { EmbedMessage } from "./models/EmbedMessage";
+import * as dotenv from "dotenv";
 
 export class DiscordTS {
     private client: Client;
@@ -12,7 +13,9 @@ export class DiscordTS {
     constructor() {
         this.client = new Client();
         this.config = YAML.load(path.resolve(__dirname, "settings.yml"));  
-        this.embedMessage = new EmbedMessage();     
+        this.embedMessage = new EmbedMessage();  
+        
+        dotenv.config();
     }
 
     public start(): void {
@@ -30,7 +33,7 @@ export class DiscordTS {
             }
         });
 
-        this.client.login(this.config.settings.token);
+        this.client.login(process.env.TOKEN);
     }
 
     private getAlmanaxOfToday(): any {

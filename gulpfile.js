@@ -1,10 +1,10 @@
-const gulp = require('gulp');
 const del = require('del');
+const gulp = require('gulp');
 const ts = require('gulp-typescript');
 
 const tsProject = ts.createProject('tsconfig.json');
 
-gulp.task('build', function () {
+gulp.task('toJS', function () {
     del.sync(["./build/**/*.*"]);
 
     gulp.src("./src/**/*.yml").pipe(gulp.dest("build/"));
@@ -13,3 +13,5 @@ gulp.task('build', function () {
         .pipe(tsProject())
         .pipe(gulp.dest("build"));
 });
+
+gulp.task('default', gulp.series('toJS'));
