@@ -1,0 +1,6 @@
+settings:
+    prefix: "!"
+    namebot: "AlmaBot"
+
+almanax:
+    url: "http://www.profus.ovh/modules/almanax/almaquery.php"

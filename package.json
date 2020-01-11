@@ -6,7 +6,7 @@
   "scripts": {
     "build:gulp": "gulp",
     "build": "npm run build:gulp -s",
-    "start": "npm run build && node ./build/main.js"
+    "start": "npm run build && node ./lib/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -28,9 +28,11 @@
   "devDependencies": {
     "@types/node": "^13.1.6",
     "@types/yamljs": "^0.2.30",
+    "browserify": "^16.5.0",
     "del": "^5.1.0",
     "gulp": "^4.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.4",
+    "vinyl-source-stream": "^2.0.0"
   }
 }

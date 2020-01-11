@@ -20,6 +20,10 @@ export class DiscordTS {
 
     public start(): void {
 
+        this.client.on("ready", () => {
+            console.log("I'm ready!");
+        });
+
         this.client.on("message", (message: Message) => {
             if (message.content === this.config.settings.prefix + "almanax") {
                 this.getAlmanaxOfToday()
